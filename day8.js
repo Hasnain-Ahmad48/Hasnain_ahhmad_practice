@@ -188,3 +188,36 @@ const btn10 = document.createElement("button");
 btn10.innerText = "Remove duplicates";
 btn10.onclick = () => showResult([1, 2, 2, 3, 3, 4,4,4,4,3,5,6,7,8], removeDuplicates([1, 2, 2, 3, 3, 4,4,4,4,3,5,6,7,8]), "Removed duplicates");
 buttonsContainer.appendChild(btn10);
+
+
+const btn11 = document.createElement("button");
+btn11.innerText = "Change Background Color";
+btn11.onclick = () => {
+  // pick a random pastel color
+  const colors = ["#ffebcd", "#d1f7c4", "#cce5ff", "#ffe0e0", "#f7d1f7"];
+  document.body.style.backgroundColor =
+    colors[Math.floor(Math.random() * colors.length)];
+  showResult("Page", "Background changed", "Background color was changed randomly");
+};
+buttonsContainer.appendChild(btn11);
+
+// 12. Increase output font size
+const btn12 = document.createElement("button");
+btn12.innerText = "Increase Output Font";
+btn12.onclick = () => {
+  const currentSize = window.getComputedStyle(outputDiv).fontSize;
+  const newSize = parseInt(currentSize) + 2 + "px";
+  outputDiv.style.fontSize = newSize;
+  showResult("Output box", `Font size set to ${newSize}`, "Font size increased");
+};
+buttonsContainer.appendChild(btn12);
+
+// 13. Toggle dark/light theme
+const btn13 = document.createElement("button");
+btn13.innerText = "Toggle Dark/Light Theme";
+btn13.onclick = () => {
+  document.body.classList.toggle("dark-mode");
+  const mode = document.body.classList.contains("dark-mode") ? "Dark" : "Light";
+  showResult("Theme", mode, `Switched to ${mode} mode`);
+};
+buttonsContainer.appendChild(btn13);

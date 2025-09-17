@@ -120,6 +120,23 @@ function removeDuplicates(arr) {
   return newArr;
 }
 
+// Git demo button
+const gitBtn = document.getElementById("git-btn");
+const gitOutput = document.getElementById("git-output");
+
+gitBtn.onclick = () => {
+  gitOutput.innerText = 
+`Command: git clone git@github.com:username/repo.git
+Explanation: Clones the repository from GitHub using SSH.
+
+Command: git switch my-branch
+Explanation: Switches to your own branch.
+
+Command: git pull origin main
+Explanation: Pulls the latest changes from remote main branch.`;
+};
+
+
 
 // Show result helper
 function showResult(input, result, explanation) {

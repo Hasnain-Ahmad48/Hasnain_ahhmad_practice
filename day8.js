@@ -205,6 +205,8 @@ btn10.onclick = () =>
   );
 buttonsContainer.appendChild(btn10);
 
+//adding three buttons
+
 // 11. Show a random quote
 const btn11 = document.createElement("button");
 btn11.innerText = "Show Random Quote";

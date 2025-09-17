@@ -121,6 +121,33 @@ function removeDuplicates(arr) {
   return newArr;
 }
 
+
+// Git demo button
+const gitBtn = document.getElementById("git-btn");
+const gitOutput = document.getElementById("git-output");
+
+gitBtn.onclick = () => {
+  gitOutput.innerText = 
+`Command: git clone git@github.com:username/repo.git
+Explanation: Clones the repository from GitHub using SSH.
+
+Command: git switch my-branch
+Explanation: Switches to your own branch.
+
+Command: git pull origin main
+Explanation: Pulls the latest changes from remote main branch.`;
+};
+// --- Extra Button: Done Task By Ameer (next to Git commands) ---
+const btnDone = document.createElement("button");
+btnDone.innerText = "Done Task By Ameer";
+btnDone.onclick = () => showResult([], "Done Task By Ameer", "");
+buttonsContainer.appendChild(btnDone);
+
+
+
+
+
+
 // Show result helper
 function showResult(input, result, explanation) {
   outputDiv.innerHTML = `<strong>Input:</strong> ${JSON.stringify(

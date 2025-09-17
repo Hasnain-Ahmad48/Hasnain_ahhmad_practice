@@ -135,6 +135,13 @@ Explanation: Switches to your own branch.
 Command: git pull origin main
 Explanation: Pulls the latest changes from remote main branch.`;
 };
+// --- Extra Button: Done Task By Ameer (next to Git commands) ---
+const btnDone = document.createElement("button");
+btnDone.innerText = "Done Task By Ameer";
+btnDone.onclick = () => showResult([], "Done Task By Ameer", "");
+buttonsContainer.appendChild(btnDone);
+
+
 
 
 

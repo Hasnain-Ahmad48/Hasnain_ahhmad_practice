@@ -232,6 +232,36 @@ btn10.onclick = () =>
   );
 buttonsContainer.appendChild(btn10);
 
+
+//11. check variable is an array
+const btn11 = document.createElement("button");
+btn11.innerText = "check if variable is an array";
+btn11.onclick = () => showResult(numbers, Array.isArray(numbers))
+buttonsContainer.appendChild(btn11);
+
+//12. sort array in ascending order
+const btn12 = document.createElement("button");
+btn12.innerText = "sort array in ascending order";
+btn12.onclick = () => showResult(numbers, numbers.sort((a, b) => a - b))
+buttonsContainer.appendChild(btn12);
+
+//13. sort array in descending order
+const btn13 = document.createElement("button");
+btn13.innerText = "sort array in descending order";
+btn13.onclick = () => showResult(numbers, numbers.sort((a, b) => b - a))
+buttonsContainer.appendChild(btn13);  
+
+//14. find max number in array
+const btn14 = document.createElement("button");
+btn14.innerText = "find max number in array";
+btn14.onclick = () => showResult(numbers, Math.max(...numbers))
+buttonsContainer.appendChild(btn14);
+
+//15. find min number in array
+const btn15 = document.createElement("button");
+btn15.innerText = "find min number in array";
+btn15.onclick = () => showResult(numbers, Math.min(...numbers))
+buttonsContainer.appendChild(btn15);
 //adding three buttons
 
 // 11. Show a random quote
@@ -273,3 +303,4 @@ btn13.onclick = () => {
   showResult("Current Time", now, "Displays the current date and time.");
 };
 buttonsContainer.appendChild(btn13);
+

@@ -156,6 +156,7 @@ function fetchJoke() {
   xhr.send();
 }
 
+
 function fetchPokemon() {
   var xhr = new XMLHttpRequest();
   var url = "https://pokeapi.co/api/v2/pokemon/pikachu";

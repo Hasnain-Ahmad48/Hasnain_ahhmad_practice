@@ -7,9 +7,12 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Travel Recommendation</title>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="stylesheet"
       href="travel_recommendation.css"
@@ -24,8 +27,8 @@
       </div>
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
       <form
         class="search-bar"
@@ -37,34 +40,116 @@
           name="q"
           placeholder="Search..."
         />
-        <button type="submit"><i class="fa-search"></i></button>
+        <button type="submit"><i class="fa fa-search"></i></button>
       </form>
     </nav>
 
-  
-    <!-- Hero Section -->
-<section class="hero">
-  <!-- Social icons -->
-  <div class="social-links">
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-facebook-f"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-  </div>
+    <section class="hero">
+      <div class="social-links">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
 
-  <div class="hero-content">
-    <h1>
-      <span>EXPLORE</span><br />
-      <span>DREAM</span><br />
-      <span>DESTINATION</span>
-    </h1>
-    <p>
-      It encourages exploration of unfamiliar territories, embracing diverse
-      cultures and landscapes, while pursuing the desired destination that
-      captivates the heart and ignites a sense of wonder.
+      <div class="hero-content">
+        <h1>
+          <span>EXPLORE</span><br />
+          <span>DREAM</span><br />
+          <span>DESTINATION</span>
+        </h1>
+        <p>
+          It encourages exploration of unfamiliar territories, embracing diverse
+          cultures and landscapes, while pursuing the desired destination that
+          captivates the heart and ignites a sense of wonder.
+        </p>
+        <a
+          href="#"
+          class="btn"
+          >BOOK NOW</a
+        >
+      </div>
+    </section>
+
+    <!-- ===== ABOUT US SECTION ===== -->
+    <section
+      id="about"
+      class="about-section"
+    >
+      <div class="about-container">
+        <h2>ABOUT US</h2>
+        <p class="about-text">
+          Welcome to <strong>TravelBloom!</strong> We are a team of passionate
+          individuals dedicated to providing the best experience for people
+          traveling to different destinations around the world. Our values
+          include integrity, innovation, customer satisfaction, and teamwork. We
+          believe in creating unforgettable journeys that inspire and connect
+          cultures.
+        </p>
+
+        <h3 class="team-heading">Our Team</h3>
+
+        <div class="team-grid">
+          <div class="team-member">
+            <img
+              src="images/member1.jpg"
+              alt="Hasnain Ahmad"
+            />
+            <h4>Hasnain Ahmad</h4>
+            <p class="role">CEO</p>
+          </div>
+
+          <div class="team-member">
+            <img
+              src="images/member2.jpg"
+              alt="wasif's photo"
+            />
+            <h4>Wasif ullah</h4>
+            <p class="role">Operations Manager</p>
+          </div>
+
+          <div class="team-member">
+            <img
+              src="images/member3.jpg"
+              alt="Saad's photo"
+            />
+            <h4>Saad Khan</h4>
+            <p class="role">Travel Consultant</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ===== CONTACT US SECTION ===== -->
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <h2>CONTACT US</h2>
+    <p class="contact-intro">
+      Have questions, feedback, or need help planning your next adventure?
+      Fill out the form below and our team will get back to you soon!
     </p>
-    <a href="#" class="btn">BOOK NOW</a>
+
+    <form class="contact-form" action="#" method="post">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
   </div>
 </section>
 
+
+    <script src="travel_recommendation.js"></script>
   </body>
 </html>

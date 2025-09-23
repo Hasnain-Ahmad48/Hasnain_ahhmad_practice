@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f0f0f0;
+}
+
+.navbar {
+  width: 100%;
+  padding: 15px 60px;
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo a {
+  margin-right: 8px;
+  font-size: 1.4rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #1abc9c; 
+}
+
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.search-bar input {
+  border: none;
+  padding: 6px 12px;
+  outline: none;
+  width: 160px;
+  font-size: 14px;
+}
+
+.search-bar button {
+  background: #1abc9c;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-bar button:hover {
+  background: #16a085;
+}
+
+.hero {
+  position: relative;
+  height: 100vh; /* full screen height */
+  background: url('your-image.jpg') center/cover no-repeat; /* replace with your image path */
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  color: #fff;
+}
+
+/* Dark overlay for readability */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Social icons on left */
+.social-links {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 2;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #1abc9c;
+}
+
+.hero {
+  position: relative;
+  height: 100vh; /* full screen */
+  background: url('mianpic.jpg') center/cover no-repeat; /* 🔑 replace with your picture path */
+  display: flex;
+  justify-content: center;    /* horizontal center */
+  align-items: center;        /* vertical center */
+  text-align: center;         /* center text alignment */
+  padding: 0 20px;
+  color: #fff;
+}
+
+/* dark overlay so text is readable */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* social links fixed on left side */
+.social-links {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 2;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #1abc9c;
+}
+
+.hero-content {
+  position: relative; /* so it stays above the overlay */
+  z-index: 2;
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.hero-content .btn {
+  display: inline-block;
+  background: #1abc9c;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.hero-content .btn:hover {
+  background: #16a085;
+}
+

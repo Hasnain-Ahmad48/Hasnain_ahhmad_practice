@@ -50,33 +50,36 @@ body {
   color: #1abc9c;
 }
 
-.search-bar {
-  display: flex;
-  align-items: center;
-  background: #ffffff;
-  border-radius: 20px;
-  overflow: hidden;
+.searchinput{
+    width: 15rem;
+    border: none;
+    outline: none;
+    color: rgb(5, 103, 107);
 }
 
-.search-bar input {
-  border: none;
-  padding: 6px 12px;
-  outline: none;
-  width: 160px;
-  font-size: 14px;
+::placeholder{
+    color: rgb(5, 103, 107);
 }
 
-.search-bar button {
-  background: #1abc9c;
-  border: none;
-  color: white;
-  padding: 6px 12px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+
+#search{
+    background-color: #fff;
+    padding: .3rem 1rem;
+    border-radius: 20px;
 }
 
-.search-bar button:hover {
-  background: #16a085;
+.searchicon{
+    color: rgb(5, 103, 107) ;
+}
+
+.btn{
+    padding: .2rem .4rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color:rgb(5, 103, 107) ;
+    color: #fff;
+    margin-left: .3rem;
 }
 
 .hero {

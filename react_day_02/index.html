@@ -69,6 +69,24 @@
         style: {width: "300px", display: "block"},
       });
 
+      const formElement = React.createElement("form", null, [
+        React.createElement("h2", {key: "title"}, "Contact Form"),
+        React.createElement("input", {
+          key: "name",
+          type: "text",
+          placeholder: "Enter your name",
+        }),
+        React.createElement("input", {
+          key: "email",
+          type: "email",
+          placeholder: "Enter your email",
+        }),
+        React.createElement("textarea", {
+          key: "message",
+          placeholder: "Enter your message",
+        }),
+      ]);
+
       const root = ReactDOM.createRoot(document.getElementById("root"));
       //   root.render([numberElement, resultElement]);
       root.render(
@@ -80,7 +98,9 @@
           buttonElement,
           buttonElement2,
           imgElement,
-        ])
+          formElement,
+        ]),
+        "send"
       );
     </script>
   </body>

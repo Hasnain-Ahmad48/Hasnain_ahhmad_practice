@@ -12,7 +12,12 @@ function RenderingForm() {
         placeholder="Enter your name"
         value={name}
         onChange={e => setName(e.target.value)}
-        
+        style={{
+          padding: "5px",
+          margin: "10px",
+          border: "none",
+          outline: "none",
+        }}
       />
       <br />
       <input
@@ -20,7 +25,12 @@ function RenderingForm() {
         placeholder="Enter valid Email"
         value={email}
         onChange={e => setEmail(e.target.value)}
-      
+        style={{
+          padding: "5px",
+          margin: "10px",
+          border: "none",
+          outline: "none",
+        }}
       />
       <br />
       <input
@@ -28,7 +38,12 @@ function RenderingForm() {
         placeholder="Enter yor age"
         value={age}
         onChange={e => setAge(e.target.value)}
-        
+        style={{
+          padding: "5px",
+          margin: "10px",
+          border: "none",
+          outline: "none",
+        }}
       />
     </>
   );

@@ -2,11 +2,16 @@ import React, {use, useState} from "react";
 
 function RenderingForm() {
   const [name, setName] = useState("");
-  const {age, setAge} = useState("");
+  const [age, setAge] = useState(0);
   const [email, setEmail] = useState("");
 
   return (
     <>
+      <div>
+        <p>
+          My nAme is {name}: My age is {age}: Email is {email}
+        </p>
+      </div>
       <input
         type="text"
         placeholder="Enter your name"
